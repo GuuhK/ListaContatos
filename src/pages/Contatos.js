@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Botao from '../components/Botao'
+import BotaoVoltar from '../components/BotaoVoltar'
 import axios from 'axios';
 
 const Contato = ({ route, navigation }) => {
@@ -30,7 +30,7 @@ const Contato = ({ route, navigation }) => {
             </View>
 
             <View style={estilos.botoes}>
-                <Botao titulo="Voltar" acao={ () => navigation.goBack() } />
+                <BotaoVoltar titulo="Voltar" acao={ () => navigation.goBack() } />
             </View>
         </View>
     );
